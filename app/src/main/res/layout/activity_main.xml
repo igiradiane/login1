@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/ico"
+        android:layout_marginLeft="120dp"
+        android:id="@+id/ico"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ico"
+        android:id="@+id/em"
+      android:hint="example@someone.com"
+android:inputType="textEmailAddress"
+    android:layout_marginLeft="40dp"
+     android:layout_marginRight="40dp"  />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@id/em"
+        android:id="@+id/pswd"
+        android:hint="password"
+       android:inputType="textPassword"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+      />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/background_dark"
+        android:layout_below="@id/pswd"
+        android:text="login"
+        android:id="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/background_dark"
+        android:layout_below="@id/pswd"
+        android:text="Registrer"
+        android:id="@+id/btn1"
+     android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/btn"
+        android:layout_marginLeft="60dp"/>
+</RelativeLayout>
